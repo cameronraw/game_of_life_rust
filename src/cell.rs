@@ -17,7 +17,7 @@ impl Cell {
         }
     }
 
-    pub fn calculate_new_state(&mut self, live_neighbours: u8) -> () {
+    pub fn calculate_new_state(&mut self, live_neighbours: u8) {
         if live_neighbours == 3 {
             self.state = CellState::ALIVE;
             return;

@@ -1,5 +1,6 @@
 pub mod cell;
 pub mod cell_state;
+pub mod grid;
 
 #[cfg(test)]
 pub mod tests {
