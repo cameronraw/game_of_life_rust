@@ -1,5 +1,8 @@
+pub mod Cell;
+pub mod CellState;
+
 #[cfg(test)]
-mod tests {
+pub mod tests {
     #[test]
     fn it_works() {
         let result = 2 + 2;
