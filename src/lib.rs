@@ -1,5 +1,5 @@
-pub mod Cell;
-pub mod CellState;
+pub mod cell;
+pub mod cell_state;
 
 #[cfg(test)]
 pub mod tests {

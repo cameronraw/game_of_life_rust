@@ -1,4 +1,4 @@
-use crate::CellState::CellState;
+use crate::cell_state::CellState;
 
 pub struct Cell {
     state: CellState
@@ -16,8 +16,13 @@ impl Cell {
 mod cell_should {
     use super::*;
     #[test]
-    fn be_initialized_with_state(){
+    fn be_initialized_with_live_state(){
         let _live_cell = Cell::new(CellState::ALIVE);
         assert_eq!(_live_cell.state, CellState::ALIVE);
+    }
+    #[test]
+    fn be_initialized_with_dead_state(){
+        let _live_cell = Cell::new(CellState::DEAD);
+        assert_eq!(_live_cell.state, CellState::DEAD);
     }
 }
